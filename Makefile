@@ -1,4 +1,6 @@
-.PHONY: prepare
+.PHONY: all prepare build deploy
+
+all: prepare build deploy
 
 prepare: .venv gh-pages
 
@@ -8,3 +10,9 @@ prepare: .venv gh-pages
 
 gh-pages:
 	git clone -b gh-pages git@github.com:wacky612/AbemaTV-Scraper.git gh-pages
+
+build:
+	$(PWD)/.venv/bin/python main.py > gh-pages/timetable.json
+
+deploy:
+	/bin/sh deploy.sh

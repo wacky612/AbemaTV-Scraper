@@ -1,0 +1,90 @@
+[
+  {
+    "Times": 119,
+    "Theme": "修学旅行",
+    "Worlds": [
+      {
+        "Name": "体育館 School gymnasium",
+        "ID": "wrld_ddf55404-0eb2-42c8-bc5e-389cf79a6d07"
+      },
+      {
+        "Name": "VirtualOkinawa_ShurijoCastle_［JP］［EN］",
+        "ID": "wrld_4f988561-b2a7-47f6-8028-a0c9e617574f"
+      },
+      {
+        "Name": "五十鈴神社-isuzushrine-",
+        "ID": "wrld_adbcb217-fee9-4bb0-b264-54aef167e9ac"
+      },
+      {
+        "Name": "JP Convenience Store セイコマート北海道",
+        "ID": "wrld_41c7fd7a-4733-46f1-8402-b3fd6d6f1bdd"
+      },
+      {
+        "Name": "Japanese ryokan -修学旅行-",
+        "ID": "wrld_8bfc319c-4012-4ca2-8cfc-ec06a991dd60"
+      },
+      {
+        "Name": "Kawagoe KoEdo",
+        "ID": "wrld_42f8e9a7-2368-4aa8-b1a9-17c1cfbc1e99"
+      },
+      {
+        "Name": "友ヶ島第3砲台跡",
+        "ID": "wrld_8551a443-77a6-4140-bd3e-a78a36de73b6"
+      },
+      {
+        "Name": "黄昏れ特急 -Big Sunset Express-",
+        "ID": "wrld_1749b36b-a978-406e-b4c0-60359ca6fa75"
+      },
+      {
+        "Name": "023․ 금각사 きんかくじ Kinkakuji 金閣寺",
+        "ID": "wrld_6ab9efb9-d655-4c08-9bbd-600e2f96ef92"
+      },
+      {
+        "Name": "白羽旅館 Shiroha's Ryokan",
+        "ID": "wrld_f582ce7f-5486-47ca-9fca-a77d8ad53cd1"
+      }
+    ]
+  },
+  {
+    "Times": 120,
+    "Theme": "パブリック",
+    "Worlds": [
+      {
+        "Name": "The Black Cat",
+        "ID": "wrld_4cf554b4-430c-4f8f-b53e-1f294eed230b"
+      },
+      {
+        "Name": "McDonald's",
+        "ID": "wrld_6b77c061-a1bf-48eb-b107-c4d944490198"
+      },
+      {
+        "Name": "EN-JP Language Exchange",
+        "ID": "wrld_153be667-a86e-4aaf-9eed-921bd568ee9b"
+      },
+      {
+        "Name": "A Simple Fishing World",
+        "ID": "wrld_ab93c6a0-d158-4e07-88fe-f8f222018faa"
+      },
+      {
+        "Name": "Cruzeiro Brasil",
+        "ID": "wrld_7d6e45ce-d03e-4d98-9b11-0ac33239a3cc"
+      },
+      {
+        "Name": "ポピー横丁-Poppy Street-",
+        "ID": "wrld_30716c54-3565-42f7-b7c5-d398ef4faac5"
+      },
+      {
+        "Name": "中文吧 Chinese Bar 7․0․5［CN＼HK＼TW］",
+        "ID": "wrld_057b9b0f-a9c1-4f3c-b002-058a658e2217"
+      },
+      {
+        "Name": "JP Tutorial world",
+        "ID": "wrld_bf51e60f-f372-48b1-a757-88ba8331d926"
+      },
+      {
+        "Name": "Early in the Morning",
+        "ID": "wrld_1ea69adf-536b-4ced-9625-0abe54061eca"
+      }
+    ]
+  }
+]

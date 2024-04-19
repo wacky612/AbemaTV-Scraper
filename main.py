@@ -42,5 +42,5 @@ for channel, url in urls.items():
             y = i.rect['y'] - y0
             json_data[day]['timetable'][channel].append({'title': title, 'height': height, 'y': y})
 
-print(json.dumps(json_data, indent=2))
+print(json.dumps(json_data, indent=2, ensure_ascii=False))
 driver.quit()

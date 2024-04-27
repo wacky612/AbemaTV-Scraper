@@ -11,12 +11,14 @@ options.add_argument('--headless')
 driver = webdriver.Chrome(options=options)
 
 urls = {
-    'anime1': 'https://abema.tv/timetable/channels/abema-anime',
-    'anime2': 'https://abema.tv/timetable/channels/abema-anime-2',
-    'anime3': 'https://abema.tv/timetable/channels/abema-anime-3',
-    'live1':  'https://abema.tv/timetable/channels/anime-live',
-    'live2':  'https://abema.tv/timetable/channels/anime-live2',
-    'live3':  'https://abema.tv/timetable/channels/anime-live3'
+    'anime-1':    'https://abema.tv/timetable/channels/abema-anime',
+    'anime-2':    'https://abema.tv/timetable/channels/abema-anime-2',
+    'isekai-1':   'https://abema.tv/timetable/channels/isekai-anime',
+    'isekai-2':   'https://abema.tv/timetable/channels/isekai-anime-2',
+    'lovecomedy': 'https://abema.tv/timetable/channels/lovecomedy-anime',
+    'dailylife':  'https://abema.tv/timetable/channels/dailylife-anime',
+    'late-night': 'https://abema.tv/timetable/channels/late-night-anime',
+    'anime-live': 'https://abema.tv/timetable/channels/anime-live',
 }
 
 json_data = [{}, {}, {}]

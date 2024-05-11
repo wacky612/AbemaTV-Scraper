@@ -144,14 +144,19 @@ for channel_group in config:
 
         for day in range(len(days)):
             channel_data_in_a_day = []
-            items = timetablecolumns[day].find_elements(By.CLASS_NAME, "com-timetable-TimetableItem")
-            y0 = items[0].rect['y']
 
-            for i in items:
-                title = i.find_element(By.CLASS_NAME, "com-a-CollapsedText__container").text.replace('\n', '')[2:]
-                height = i.rect['height']
-                y = i.rect['y'] - y0
-                channel_data_in_a_day.append({'title': title, 'height': height, 'y': y})
+            if len(timetablecolumns) > day:
+                items = timetablecolumns[day].find_elements(By.CLASS_NAME, "com-timetable-TimetableItem")
+
+                if len(items) > 0:
+                    y0 = items[0].rect['y']
+
+                    for i in items:
+                        title_element = i.find_element(By.CLASS_NAME, "com-a-CollapsedText__container")
+                        title = title_element.text.replace('\n', '')[2:]
+                        height = i.rect['height']
+                        y = i.rect['y'] - y0
+                        channel_data_in_a_day.append({'title': title, 'height': height, 'y': y})
                 
             channel_data.append(channel_data_in_a_day)
         channel_group_data.append(channel_data)

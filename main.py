@@ -14,48 +14,33 @@ config = [
     {
         'channel_selector_info': {
             'display_name': 'アニメ',
-            'anchor_x_min': 0.1,
-            'anchor_x_max': 0.3,
+            'anchor_x_min': 0.125,
+            'anchor_x_max': 0.375,
             'font_size': 6
         },
         'channels': [
             {
                 'display_name': 'アニメ１',
                 'anchor_x_min': 0.0,
-                'anchor_x_max': 0.5,
+                'anchor_x_max': 0.33,
                 'url': 'https://abema.tv/timetable/channels/abema-anime'
             }, {
                 'display_name': 'アニメ２',
-                'anchor_x_min': 0.5,
-                'anchor_x_max': 1.0,
+                'anchor_x_min': 0.33,
+                'anchor_x_max': 0.67,
                 'url': 'https://abema.tv/timetable/channels/abema-anime-2'
-            }
-        ]
-    }, {
-        'channel_selector_info': {
-            'display_name': '異世界\nファンタジー',
-            'anchor_x_min': 0.3,
-            'anchor_x_max': 0.5,
-            'font_size': 3
-        },
-        'channels': [
-            {
-                'display_name': '異世界・ファンタジー１',
-                'anchor_x_min': 0.0,
-                'anchor_x_max': 0.5,
-                'url': 'https://abema.tv/timetable/channels/isekai-anime'
             }, {
-                'display_name': '異世界・ファンタジー２',
-                'anchor_x_min': 0.5,
+                'display_name': '異世界ファンタジー',
+                'anchor_x_min': 0.67,
                 'anchor_x_max': 1.0,
-                'url': 'https://abema.tv/timetable/channels/isekai-anime-2'
+                'url': 'https://abema.tv/timetable/channels/isekai-anime'
             }
         ]
     }, {
         'channel_selector_info': {
             'display_name': 'ラブコメ\n日常青春',
-            'anchor_x_min': 0.5,
-            'anchor_x_max': 0.7,
+            'anchor_x_min': 0.375,
+            'anchor_x_max': 0.625,
             'font_size': 3
         },
         'channels': [
@@ -74,8 +59,8 @@ config = [
     }, {
         'channel_selector_info': {
             'display_name': '深夜\nアニライ',
-            'anchor_x_min': 0.7,
-            'anchor_x_max': 0.9,
+            'anchor_x_min': 0.625,
+            'anchor_x_max': 0.875,
             'font_size': 3
         },
         'channels': [

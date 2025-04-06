@@ -6,9 +6,13 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
+
 
 config = [
     {

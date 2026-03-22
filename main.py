@@ -1,18 +1,33 @@
 #!/usr/bin/env python
 
+import os
+import shutil
 import json
 import datetime
+import subprocess
 from time import sleep
+from pathlib import Path
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
 
+root_dir    = Path(__file__).resolve().parent
+build_dir   = root_dir / 'gh-pages'
+private_dir = root_dir / 'private'
+
+os.chdir(root_dir)
+
+if build_dir.exists(): shutil.rmtree(build_dir)
+
+subprocess.run(' '.join([f'git -c core.sshCommand="ssh -i {private_dir}/id_ed25519"',
+                         f'clone -b gh-pages git@github.com:wacky612/AbemaTV-Scraper.git gh-pages']),
+               shell=True)
+
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-
 
 config = [
     {
@@ -152,5 +167,12 @@ for channel_group in config:
     json_data['timetable'].append(channel_group_data)
     json_data['timetable_header'].append(channel_group_header_data)
 
-print(json.dumps(json_data, indent=2, ensure_ascii=False))
 driver.quit()
+
+(build_dir / 'timetable.json').write_text(json.dumps(json_data, indent=2, ensure_ascii=False))
+
+os.chdir(build_dir)
+
+subprocess.run(f'git add timetable.json', shell=True)
+subprocess.run(f'git commit --amend --no-edit', shell=True)
+subprocess.run(f'git -c core.sshCommand="ssh -i {private_dir}/id_ed25519" push -f', shell=True)
